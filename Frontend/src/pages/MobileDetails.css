@@ -1,0 +1,253 @@
+/* Flexbox for mobile-header */
+.mobile-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; /* Ensure the items are close to each other */
+  gap: 20px; /* Set a small gap between the image and the content */
+  margin-bottom: 20px; /* Adjust margin for balance */
+}
+
+/* Adjust the mobile image */
+.mobile-image {
+  width: 190px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-right: 10px; /* Reduce the right margin to bring content closer */
+}
+
+.mobile-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Align text to the middle of the image */
+  margin-left: 0; /* Remove extra margins */
+  max-width: 600px;
+}
+
+/* Color options hover effect */
+.color-option {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 4px;
+  background-color: #e2e2e2;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.color-option:hover {
+  background-color: #818181; /* Darker blue on hover */
+  color: white; /* White text on darker blue */
+}
+
+/* Button hover effect */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Icon hover effect */
+.icon {
+  vertical-align: middle;
+  color: #007bff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+  color: #0056b3;
+  transform: rotate(20deg);
+}
+
+/* Section hover shadow effect */
+.spec-section, .features-section, .dimensions-section, .color-section, .reviews-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.spec-section:hover, .features-section:hover, .dimensions-section:hover, .color-section:hover, .reviews-section:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 769px) {
+  .mobile-header {
+    display: flex;
+    align-items: center; /* Aligns the image and info vertically aligned */
+    justify-content: flex-start;
+  }
+
+  .mobile-info {
+    margin-left: 10px; /* Adjust margin for better positioning */
+  }
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .mobile-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-image {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+
+  .mobile-info {
+    width: 100%;
+  }
+}
+
+ h3 {
+  color: rgb(33, 170, 255) !important;
+ }
+
+ h2 {
+  color: rgba(0, 94, 255, 0.771) !important;
+ }
+
+
+
+
+
+
+
+
+ /* PLACEHOLDER CSS */ 
+
+ /* Container for the loading section */
+.loading-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between placeholders */
+  padding: 20px;
+  align-items: center; /* Centers the loading elements */
+}
+
+/* Placeholder skeletons */
+.loading-placeholder {
+  background-color: #e0e0e0; /* Light grey for placeholder color */
+  border-radius: 8px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.crud{
+  width: 50%;
+  height: 100px;
+  margin-left: 45%;
+  align-content: center;
+  border-radius: 8px;
+  animation: crud 2s infinite ease-in-out;
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0% {
+    background-color: #e0e0e0;
+  }
+  50% {
+    background-color: #f0f0f0;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
+
+/* Image placeholder size */
+.image-placeholder {
+  width: 200px;
+  height: 300px;
+}
+
+/* Text placeholder size */
+.text-placeholder {
+  width: 100%;
+  height: 25px;
+  max-width: 300px; /* Limits the width on larger screens */
+}
+
+/* Large placeholder for paragraphs or blocks */
+.large-placeholder {
+  width: 100%;
+  height: 150px;
+}
+
+/* Table placeholder size */
+.table-placeholder {
+  width: 100%;
+  height: 250px;
+  max-width: 700px; /* Set maximum width for larger screens */
+  border-radius: 8px;
+}
+
+/* Responsive design */
+@media (min-width: 769px) {
+  .loading-section {
+    flex-direction: row; /* For larger screens, align horizontally */
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .image-placeholder {
+    width: 300px;
+    height: 400px; /* Larger image placeholder for bigger screens */
+  }
+
+  .text-placeholder {
+    max-width: 500px; /* Increased width on larger screens */
+  }
+
+  .large-placeholder {
+    height: 200px; /* Larger block on bigger screens */
+  }
+
+  .table-placeholder {
+    height: 300px; /* Table placeholder gets bigger */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile and tablet view */
+  .image-placeholder {
+    width: 150px;
+    height: 250px; /* Smaller image placeholder */
+  }
+
+  .text-placeholder, .large-placeholder, .table-placeholder {
+    width: 100%;
+  }
+
+  .text-placeholder {
+    height: 20px;
+    max-width: 80%; /* Ensure text placeholder fits well */
+  }
+
+  .large-placeholder {
+    height: 120px; /* Shrinks block size for mobile */
+  }
+
+  .table-placeholder {
+    height: 200px; /* Adjust table size for mobile */
+  }
+}

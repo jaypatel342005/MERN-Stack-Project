@@ -1,0 +1,103 @@
+.navbar-nav .nav-link {
+    position: relative;
+    color: white;
+    transition: color 0.3s, transform 0.3s; /* Removed box-shadow transition */
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orange; /* Orange underline */
+    transition: width 0.4s, left 0.4s;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge text on hover */
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00; /* Glowing text effect */
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Centering the navbar items */
+.navbar-collapse {
+    text-align: center;
+}
+
+/* Removing border from the navbar */
+.navbar {
+    border: none;
+}
+
+/* Adding animation to the hamburger icon */
+.navbar-toggler {
+    transition: transform 0.3s; /* Removed box-shadow transition */
+    border: none; /* Remove default border */
+    outline: none; /* Remove focus outline */
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Ensure outline is removed on focus */
+    box-shadow: none; /* Remove any box shadow on focus */
+}
+
+.navbar-toggler.collapsed {
+    transform: rotate(0);
+}
+
+.navbar-toggler:not(.collapsed) {
+    transform: rotate(90deg);
+}
+
+/* Adding hover effect to hamburger button */
+.navbar-toggler:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Slight background color change on hover */
+}
+
+
+.apple-logo {
+    
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+    margin-right: 10px; /* Add margin on the right */
+    margin-left: 10px;
+}
+
+.apple-logo:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+.apple-logo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for the hover effect */
+    margin-right: 10px; /* Add margin on the right */
+}
+.apple-logo {
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transitions for the hover effect */
+    margin-right: 10px; /* Add margin on the right */
+}
+
+.apple-logo:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    filter: drop-shadow(0 0 11px rgb(115, 236, 255)) drop-shadow(0 0 20px rgb(75, 237, 255,1)); /* Glowing effect */
+}
+
+footer {
+    font-size: 14px;
+    background-color: rgb(4, 4, 4);
+    
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

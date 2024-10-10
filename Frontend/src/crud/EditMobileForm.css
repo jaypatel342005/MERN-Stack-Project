@@ -1,0 +1,79 @@
+/* Container for the mobile editing form */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    background-image: url('https://user-images.githubusercontent.com/13468728/233847739-219cb494-c265-4554-820a-bd3424c59065.jpg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the whole container */
+    background-position: center; /* Centers the image */
+}
+
+/* Styles for the form */
+.edit-mobile-form {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    padding: 2rem; /* Padding around the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    width: 550px; /* Set a fixed width for the form */
+    backdrop-filter: blur(10px); /* Blur effect */
+}
+
+/* Styles for the form title */
+.form-title {
+    font-size: 2.5rem; /* Large font size for the title */
+    margin-bottom: 1.5rem; /* Space below the title */
+    text-align: center; /* Center align the title */
+    color: #333; /* Dark color for better readability */
+}
+
+/* Styles for each form group */
+.form-group {
+    margin-bottom: 1.5rem; /* Space between each form group */
+}
+
+/* Styles for the form labels */
+.form-label {
+    display: block; /* Block display for labels */
+    font-weight: bold; /* Bold text for labels */
+    margin-bottom: 0.5rem; /* Space below the label */
+    color: #414141; /* Gray color for labels */
+}
+
+/* Styles for the form inputs */
+.form-input {
+    width: 100%; /* Full width for input fields */
+    padding: 0.75rem; /* Padding inside input fields */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light semi-transparent border */
+    border-radius: 5px; /* Slightly rounded corners */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent input fields */
+    font-size: 1rem; /* Standard font size */
+    color: white; /* White text color inside inputs */
+    transition: border-color 0.3s; /* Smooth transition for focus */
+    backdrop-filter: blur(70px); /* Blur effect on input */
+}
+
+/* Change border color on focus */
+.form-input:focus {
+    border-color: rgba(255, 255, 255, 0.6); /* Change to lighter white on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Styles for the submit button */
+.form-button {
+    background-color: rgba(0, 123, 255, 0.478); /* Semi-transparent blue background */
+    color: white; /* White text color */
+    padding: 0.75rem; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Standard font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width for the button */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    backdrop-filter: blur(5px); /* Blur effect on button */
+}
+
+/* Change background color on hover */
+.form-button:hover {
+    background-color: rgba(0, 86, 179, 0.6); /* Darker blue on hover */
+}

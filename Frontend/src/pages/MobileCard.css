@@ -1,0 +1,126 @@
+.card-list {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px; /* Adjust card width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Ensure the image and content stack vertically */
+    align-items: center; 
+    text-decoration: none !important;    /* Center content horizontally */
+  }
+
+  .card:hover{
+    transform: scale(1.02);
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+  }
+  
+  .card-image-container {
+    width: 80%;   /* Adjust the width of the image container as needed */
+    height: 0; /* Set the height to 0 to avoid unnecessary padding */
+    padding-bottom: 56.25%; /* Set the aspect ratio to 16:9 */
+    position: relative;
+    padding-bottom: 0; /* Removed padding to eliminate extra height */
+    display: flex;
+    justify-content: center; /* Center image container */
+  }
+  
+  .card-image {
+    width: 70%;    /* Image dynamically adjusts to fill the container */
+    height: 50%;   /* Maintains aspect ratio */
+;
+  }
+  
+  .card-body {
+    padding: 15px;
+    text-align: center; /* Center text in the body */
+    
+  }
+  
+  .card-body h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .card-body p {
+    margin: 5px 0;
+  }
+  
+/* Placeholder styles with transition and animation */
+.card.placeholder {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  background-color: #ddd;
+  box-shadow: 0 4px 8px rgba(143, 143, 143, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation for the placeholder card */
+}
+
+.card-image-placeholder {
+  width: 70%;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 8px;
+  margin: 15px 0;
+  position: relative;
+  overflow: hidden;
+  animation: shimmer 1.5s infinite ease-in-out; /* Shimmer effect for image */
+}
+
+.placeholder-line {
+  width: 80%;
+  height: 20px;
+  background-color: #ddd;
+  margin: 10px 0;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  animation: shimmer 1.5s infinite ease-in-out; /* Shimmer effect for lines */
+}
+
+.placeholder-line.title {
+  width: 60%;
+  height: 25px;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* Slide in from bottom */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+  }
+}
+
+/* Keyframes for shimmer effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+.card-image-placeholder, .placeholder-line {
+  background: linear-gradient(90deg, #ddd 25%, #f0f0f0 50%, #ddd 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite ease-in-out;
+}

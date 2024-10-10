@@ -1,0 +1,382 @@
+/* Navbar Styles */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Keep the navbar on top */
+    background-color: #000; /* Ensure it's visible */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .body {
+    background-color: #000;
+    padding-top: 60px; /* Ensure content starts below the navbar */
+  }
+  
+  /* Main Section */
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+
+  
+  
+  .x, .xx {
+    max-width: 70%;
+    height: auto; /* Ensure videos are responsive */
+  }
+  
+  /* Page Header Styles */
+  .page h1 {
+    color: white;
+    font-size: 5vw; /* Dynamically scale the heading */
+    font-weight: 600;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+  }
+  
+  .page p {
+    color: #86868B;
+    font-size: 2.6vw;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+  }
+  
+  .buttons button {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 40px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .buttons button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .hero_h1 {
+    font-size: 5vw;
+    text-align: center;
+    color: white;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  
+  /* Camera Section */
+  .camera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    gap: 20px;
+    overflow: hidden;
+  }
+  
+  .camera h1 {
+    font-size: 5vw;
+    margin-top: 50px;
+  }
+  
+  .camera p {
+    color: #86868B;
+    font-size: 2.7vw;
+    margin-top: 20px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .camera img {
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 400px;
+
+  }
+  
+  /* Charger Section */
+  .charger {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .charger h1 {
+    font-size: 5.5vw;
+    text-align: center;
+    color: rgb(159, 159, 159);
+  }
+  
+  .charger img {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .charger_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+  }
+  
+  .charger_main .left {
+    text-align: center;
+    font-size: 2vw;
+    color: #696969;
+  }
+  
+  .charger_main .right {
+    text-align: center;
+    font-size: 1.5vw;
+    color: #b9b9b9;
+
+  }
+  
+  .charger_main .right h2 {
+    font-size: 5vw;
+    margin-top: 0;
+    color: white;
+  }
+  
+  /* iOS Section */
+  .ios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000000;
+    overflow: hidden;
+    font-size: 8vh;
+    font-weight: 600;
+    color: #888888;
+  
+  }
+  
+
+   hh2 {
+    font-size: 11vw;
+    color: #dbdbdb;
+    margin-top: 50px;
+  }
+  
+   hh3 {
+    font-size: 7vw;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .ios img {
+    width: 70%;
+    margin-top: 40px;
+    padding: 50px;
+    margin-bottom: 40px;
+  }
+  
+  /* Final Text Section */
+  .lastt {
+    text-align: center;
+    font-size: 6vw;
+    color: #888888;
+    background-color: black;
+    padding: 50px;
+    margin-bottom: 0px;
+  }
+  
+  /* Tablet View (1024px and below) */
+  @media (max-width: 1024px) {
+    .x, .xx {
+      width: 85%;
+    }
+  
+    .hero {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .camera h1, .charger h1, .ios h2, .ios h3 {
+      font-size: 50px;
+    }
+  
+    .camera img, .charger img, .ios img {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .charger_main {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  
+  /* Mobile View (768px and below) */
+  @media (max-width: 768px) {
+    .x, .xx {
+      width: 100%;
+      height: auto; 
+    }
+  
+    .page h1 {
+      font-size: 40px;
+      margin-top: 150px;
+      margin-bottom: 40px;
+    }
+  
+    .page p {
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .buttons button {
+      width: 150px;
+      height: 50px;
+      font-size: 16px;
+    }
+  
+    .camera h1, .charger h1, .ios h2, .ios h3 {
+      font-size: 36px;
+      text-align: center;
+    }
+  
+    .camera p , .charger p {
+      font-size: 20px;
+      width: 90%;
+      text-align: center;
+    }
+  
+    .camera img, .charger img, .ios img {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .charger_main {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .ios {
+        
+        font-size: 4vh;
+        font-weight: 600;
+        color: #888888;
+      
+      }
+    .hero_h1 {
+      font-size: 36px;
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+  }
+  
+  /* Small Mobile View (480px and below) */
+  @media (max-width: 480px) {
+    .x,.xx {
+      width: 100%;
+      height: auto; 
+    }
+    .xx {
+        width: 100%;
+        height: auto; 
+      }
+  
+    .y{
+        width: 70%;
+    }
+    .page h1 {
+      font-size: 28px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+  
+    .page p {
+      font-size: 12px;
+      margin: 0 10px;
+    }
+  
+    .buttons button {
+      width: 140px;
+      height: 45px;
+      font-size: 14px;
+    }
+  
+    .camera h1, .charger h1, .ios h2, .ios h3 {
+      font-size: 35px;
+    }
+  
+    .camera p , .charger p{
+      font-size: 15px;
+      margin: 0 20px;
+    }
+  
+    .hero {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .charger_main {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .hero_h1 {
+      font-size: 28px;
+    }
+  
+    .lastt {
+      font-size: 28px;
+    }
+
+    .ios {
+        
+        font-size: 4vh;
+        font-weight: 600;
+        color: #888888;
+      
+      }
+  }
+  
