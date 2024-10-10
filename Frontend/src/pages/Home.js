@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import heroVideo from './assets/videos/hero.mp4';
 import smallHeroVideo from './assets/videos/smallHero.mp4';
 import highlightVideo from './assets/videos/highlight-first.mp4';
-import './assets/fonts/sfpro.OTF';
+
 
 const Home = () => {
   const videoRef = useRef(null);
@@ -23,7 +23,7 @@ const Home = () => {
   const video2 = "https://www.apple.com/105/media/in/iphone-15-pro/2023/2f337511-a940-4b57-b89c-1512b7507777/anim/action-button/large.mp4";
 
   return (
-    <div className='body' style={{ fontFamily: 'sfpro, sans-serif' }}>
+    <div className='body' >
       <div className='main'>
         <div className="page">
           <h1>iPhone 15 Pro</h1>

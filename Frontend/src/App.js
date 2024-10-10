@@ -11,7 +11,7 @@ import EditMobileForm from './crud/EditMobileForm';
 import MobileDetails1 from './pages/Crud';
 import LoginForm from './pages/LoginForm';
 import FackMobileCardList from './pages/FackProduct';
-import './assets/fonts/sfpro.OTF';
+
 
 
 
