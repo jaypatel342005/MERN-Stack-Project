@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index1.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './assets/fonts/sfpro.OTF';
 
 
 

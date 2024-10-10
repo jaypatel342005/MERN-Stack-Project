@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import heroVideo from './assets/videos/hero.mp4';
 import smallHeroVideo from './assets/videos/smallHero.mp4';
 import highlightVideo from './assets/videos/highlight-first.mp4';
+import './assets/fonts/sfpro.OTF';
 
 const Home = () => {
   const videoRef = useRef(null);

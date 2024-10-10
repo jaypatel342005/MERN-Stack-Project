@@ -31,7 +31,7 @@ const MobileDetails1 = () => {
   useEffect(() => {
     const fetchMobile = async () => {
       try {
-        const response = await axios.get(`http://192.168.92.126:4000/api/mobiles/${id}`);
+        const response = await axios.get(`https://backend-dun-zeta-26.vercel.app/api/mobiles/${id}`||`http://localhost:4000/api/mobiles/${id}`);
         setMobile(response.data);
       } catch (err) {
         if (err.response && err.response.status === 404) {
@@ -54,7 +54,7 @@ const MobileDetails1 = () => {
   };
 
   const handleDelete = (mobileId) => {
-    const apiUrl = `http://localhost:4000/api/mobiles/${mobileId}`;
+    const apiUrl = `https://backend-dun-zeta-26.vercel.app/api/mobiles/${mobileId}`||`http://localhost:4000/api/mobiles/${mobileId}`;
     
     fetch(apiUrl, {
       method: 'DELETE',
@@ -70,7 +70,7 @@ const MobileDetails1 = () => {
       // Assuming you have a state called mobiles holding a list of mobile data
       setMobiles(mobiles.filter(mobile => mobile.id !== mobileId)); // Update the state to remove the deleted mobile
       alert('Mobile deleted successfully');
-      navigate(`/product`)
+      navigate(`/crud`)
     })
     .catch((error) => {
       console.error("Error deleting mobile:", error);

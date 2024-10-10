@@ -42,7 +42,7 @@ const MobileCardList = () => {
   useEffect(() => {
     const fetchMobiles = async () => {
       try {
-        const response = await fetch(`http://192.168.92.126:4000/api/mobiles`); // API URL
+        const response = await fetch(`https://backend-dun-zeta-26.vercel.app/api/mobiles`||`http://localhost:4000/api/mobiles`); // API URL
         if (!response.ok) throw new Error('Error fetching mobile data');
         const data = await response.json();
         setMobiles(data); // Update state with the fetched data

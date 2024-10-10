@@ -18,7 +18,7 @@ const EditMobileForm = () => {
   useEffect(() => {
     const fetchMobileData = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/api/mobiles/${id}`);
+        const response = await fetch(`https://backend-dun-zeta-26.vercel.app/api/mobiles/${id}`||`http://localhost:4000/api/mobiles/${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch mobile data');
         }
@@ -111,7 +111,7 @@ const EditMobileForm = () => {
     };
   
     try {
-      const response = await fetch(`http://localhost:4000/api/mobiles/${id}`, {
+      const response = await fetch(`https://backend-dun-zeta-26.vercel.app/api/mobiles/${id}`||`http://localhost:4000/api/mobiles/${id}`, {
         method: 'PATCH', // or 'PATCH' depending on your update logic
         headers: {
           'Content-Type': 'application/json',
@@ -136,7 +136,7 @@ const EditMobileForm = () => {
       const data = await response.json();
       alert('Mobile updated successfully!');
       console.log(data);
-      navigate('/product'); // Redirect after successful update
+      navigate('/crud'); // Redirect after successful update
     } catch (error) {
       console.error('Error updating mobile:', error);
       alert('Failed to update mobile: ' + error.message);

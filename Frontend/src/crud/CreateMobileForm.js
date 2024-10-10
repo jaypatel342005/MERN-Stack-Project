@@ -26,11 +26,66 @@ const CreateMobileForm = () => {
       model: formData.model,
       price: Number(formData.price),
       releaseDate: formData.releaseDate,
-      // Additional mobile details can be added here...
+      specifications: {
+        display: {
+          size: '6.1 inches',
+          type: 'Super Retina XDR',
+          resolution: '1179 x 2556 pixels',
+        },
+        chipset: {
+          type: 'Apple A17 Pro',
+          cores: 6,
+        },
+        memory: {
+          ram: '8GB RAM',
+          storage: '128GB, 256GB, 512GB, 1TB',
+          expandable: false,
+        },
+        camera: {
+          rear: {
+            main: '48 MP',
+            ultrawide: '12 MP',
+            telephoto: '12 MP',
+            other: ['LiDAR'],
+          },
+          front: '12 MP',
+          video: '4K@60fps',
+        },
+        battery: {
+          capacity: '3200 mAh',
+          fastCharging: true,
+          wirelessCharging: true,
+        },
+        connectivity: {
+          network: ['5G', '4G', '3G', '2G'],
+          wifi: 'Wi-Fi 6',
+          bluetooth: 'Bluetooth 5.3',
+          gps: true,
+          nfc: true,
+        },
+        os: 'iOS 17',
+        sim: 'Dual SIM (Nano-SIM, eSIM)',
+      },
+      features: {
+        waterproof: true,
+        fingerprintSensor: false,
+        faceRecognition: true,
+        stereoSpeakers: true,
+        otherFeatures: ['Always-On Display'],
+      },
+      dimensions: {
+        height: '147.5 mm',
+        width: '71.5 mm',
+        thickness: '8.25 mm',
+        weight: '221 grams',
+      },
+      ratings: {
+        averageRating: 4.9,
+        numberOfReviews: 1200,
+      },
     };
-
     try {
-      const response = await fetch('http://localhost:4000/api/mobiles', {
+      const response = await fetch(`https://backend-dun-zeta-26.vercel.app/api/mobiles`||`http://localhost:4000/api/mobiles`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
