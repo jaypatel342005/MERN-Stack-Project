@@ -1,195 +1,71 @@
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-# ⚡ MERN Stack Project
+In the project directory, you can run:
 
-Welcome to the **MERN Stack Project**! This full-stack web application leverages the power of **MongoDB**, **Express.js**, **React.js**, and **Node.js** to deliver a modern and scalable solution. 🌐
+### `npm start`
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
-</p>
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## 🌍 Live Preview
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Check out the live version of the project here:  
-**[Live Preview](https://your-deployed-link.com)** 🔗
+### `npm test`
 
----
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 📑 Table of Contents
-- [⚡ MERN Stack Project](#-mern-stack-project)
-  - [🌍 Live Preview](#-live-preview)
-  - [🚀 Features](#-features)
-  - [🛠 Tech Stack](#-tech-stack)
-  - [📦 Installation](#-installation)
-  - [📂 Project Structure](#-project-structure)
-  - [🚀 Getting Started](#-getting-started)
-  - [🧪 Testing](#-testing)
-  - [🤝 Contribution](#-contribution)
-  - [🔐 License](#-license)
+### `npm run build`
 
----
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 🚀 Features
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-✨ **Full CRUD Operations**: Create, Read, Update, Delete functionality with both frontend and backend.  
-✨ **User Authentication**: Secure authentication for user management.  
-✨ **Responsive UI**: Built using **Bootstrap** for a modern and responsive design.  
-✨ **RESTful API**: Built with Express and connected to MongoDB for smooth database operations.  
-✨ **Performance Monitoring**: Frontend includes performance metrics using `reportWebVitals`.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
----
+### `npm run eject`
 
-## 🛠 Tech Stack
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-| **Technology**                                             | **Description**                         |
-|------------------------------------------------------------|-----------------------------------------|
-| ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white) | NoSQL database for storing data         |
-| ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=flat) | Backend framework for building APIs     |
-| ![React.js](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) | Frontend library for building UI        |
-| ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white) | JavaScript runtime for backend services |
-| ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white) | CSS framework for responsive design     |
-| ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=axios&logoColor=white)     | Promise-based HTTP client for the browser & Node.js |
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
----
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## 📦 Installation
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Prerequisites
+## Learn More
 
-Make sure you have the following installed:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- [Node.js](https://nodejs.org/en/download/)
-- [MongoDB](https://www.mongodb.com/try/download/community)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Steps
+### Code Splitting
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/mern-stack-project.git
-   cd mern-stack-project
-   ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-2. **Install dependencies**:
+### Analyzing the Bundle Size
 
-   - Backend:
-     ```bash
-     cd Backend
-     npm install
-     ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-   - Frontend:
-     ```bash
-     cd ../Frontend
-     npm install
-     ```
+### Making a Progressive Web App
 
-3. **Configure environment variables**:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-   Create a `.env` file in the **Backend** folder with the following variables:
-   ```bash
-   MONGO_URI=your-mongodb-uri
-   ```
+### Advanced Configuration
 
-4. **Run the application**:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-   - Backend:
-     ```bash
-     npm run server
-     ```
+### Deployment
 
-   - Frontend (in a separate terminal):
-     ```bash
-     npm start
-     ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
----
+### `npm run build` fails to minify
 
-## 📂 Project Structure
-
-```bash
-mern-stack-project/
-├── Backend/
-│   ├── middleware/       # Custom middleware (auth, error handling)
-│   ├── models/           # MongoDB models
-│   ├── routes/           # Express routes (API)
-│   ├── server.js         # Server configuration
-│   └── package.json      # Backend dependencies
-│
-├── Frontend/
-│   ├── public/           # Public files (index.html, favicon, etc.)
-│   ├── src/              # React application source code
-│   │   ├── assets/       # Static assets (images, etc.)
-│   │   ├── crud/         # CRUD components and utilities
-│   │   ├── pages/        # Page components (Home, Dashboard, etc.)
-│   │   ├── App.js        # Main React component
-│   │   ├── App.css       # Global CSS for the app
-│   │   ├── index.js      # ReactDOM entry point
-│   └── package.json      # Frontend dependencies
-│
-└── README.md             # Project documentation
-```
-
----
-
-## 🚀 Getting Started
-
-Once installed, follow these steps to run the app:
-
-1. **Backend**: The backend server will run on `http://localhost:4000/api/mobile` by default.
-   ```bash
-   npm run server
-   ```
-
-2. **Frontend**: The React application will run on `http://localhost:3000`.
-   ```bash
-   npm start
-   ```
-
-Now visit `http://localhost:3000` in your browser to use the app! 🌐
-
----
-
-## 🧪 Testing
-
-For running tests in both backend and frontend, follow these steps:
-
-1. **Backend Tests** (using Jest):
-   ```bash
-   npm test
-   ```
-
-2. **Frontend Tests** (using React Testing Library):
-   ```bash
-   npm run test
-   ```
-
----
-
-## 🤝 Contribution
-
-Contributions are always welcome! Here's how you can contribute:
-
-1. **Fork the repository** 🍴
-2. **Create a feature branch** (`git checkout -b feature/new-feature`) 🌿
-3. **Commit your changes** (`git commit -m 'Add a new feature'`) 📋
-4. **Push to the branch** (`git push origin feature/new-feature`) 🚀
-5. **Create a Pull Request** ✔️
-
----
-
-## 🔐 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
-
-### 🎉 Thank you for checking out this project! If you like it, don't forget to give it a ⭐ on GitHub! 😃
-
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
