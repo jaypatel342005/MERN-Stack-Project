@@ -8,7 +8,7 @@ const router = express.Router();
 // Get all mobiles
 router.get('/', async (req, res, next) => {
   try {
-    const mobiles = await Mobile.find();
+    const mobiles = await Mobile.find().sort({ createdAt: -1 });;
     res.json(mobiles);
   } catch (err) {
     next(err);  // Passes errors to the error handler
