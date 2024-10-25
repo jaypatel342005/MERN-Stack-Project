@@ -234,11 +234,26 @@ nav {
       flex-direction: column;
       gap: 30px;
     }
+
+    .page p {
+      color: #86868B;
+      font-size: 3.5vw;
+      font-weight: 600;
+      text-align: center;
+  }
+    p.hh3 {
+      font-size: 5vh;
+  }
+  
   
     .camera h1, .charger h1, .ios h2, .ios h3 {
       font-size: 50px;
     }
   
+    .camera p , .charger p {
+      font-size: 30px;
+ 
+    }
     .camera img, .charger img, .ios img {
       width: 100%;
       margin-right: 0;

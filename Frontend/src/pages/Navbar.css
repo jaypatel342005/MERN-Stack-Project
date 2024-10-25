@@ -47,10 +47,11 @@
 .navbar-toggler:focus {
     outline: none; /* Ensure outline is removed on focus */
     box-shadow: none; /* Remove any box shadow on focus */
+    
 }
 
 .navbar-toggler.collapsed {
-    transform: rotate(0);
+    transform: rotate(0deg);
 }
 
 .navbar-toggler:not(.collapsed) {
