@@ -68,6 +68,14 @@ const MobileCardList = () => {
         <MobileCardPlaceholder />
         <MobileCardPlaceholder />
         <MobileCardPlaceholder />
+        <MobileCardPlaceholder />
+        <MobileCardPlaceholder />
+        <MobileCardPlaceholder />
+        <MobileCardPlaceholder />
+        <MobileCardPlaceholder />
+        <MobileCardPlaceholder />
+        <MobileCardPlaceholder />
+        <MobileCardPlaceholder />
     
       </div>
     );
